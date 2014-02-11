@@ -1,0 +1,42 @@
+<html>
+  <head>
+     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+     <title>Analizador CVS</title>
+
+	 <link href="style.css" rel="stylesheet" type="text/css">
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.2/underscore-min.js"></script>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+     <script type="text/javascript" src="test.js"></script>
+  </head>
+  <body>
+	<!-- Plantilla para generar el contenido de la tabla -->
+	<script type="text/html" id="template_outTable">
+	  <table class="output" id="target">
+	    <% _.each(tabla, function(fila, i){ %>
+		  <tr>
+		  <% _.each(fila, function(celda){ %>
+		    <td <%= (wrongs[i] == 1)? "" : "class=\"wrong\"" %> > <%= celda %> </td>
+		  <% }); %>
+		  </tr>
+		<% }); %>
+	  </table>
+	</script>
+	
+	<!-- Contenido de la página encapsulado en una tabla (estética) -->
+	<table class="input">
+	  <tr><td>
+	    <h1 class="header">Analizador Comma Separated Values</h1><br>
+      </tr></td>
+	
+	  <tr><td class="left">
+	    <p>Cuadro de contenido para insertar la tabla <b>CVS</b>:</p>
+	    <textarea class="input" border="0" autofocus cols="88" rows="5" id="entrada"></textarea>
+        <br><button type="button">Press me</button><br><br>
+	  </tr></td>
+	  
+	  <tr><td>
+        <span id="target"></span>
+	  </tr></td>
+	</table>
+  </body>
+</html>
