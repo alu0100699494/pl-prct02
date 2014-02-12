@@ -6,6 +6,9 @@ body {
 }
 
 table.input {
+    margin-left:auto; 
+    margin-right:auto;
+	
     text-align: center;
     border-collapse: separate;
 }
@@ -62,3 +65,13 @@ textarea.input {
   height: 12em;
   border: 3px solid #3C5681;
 }
+
+#target tr:hover td {
+  background-color: #151d58;
+  color: #FFFFFF;
+} 
+
+#target tr:hover td.wrong {
+  background-color: #5c0202;
+  color: #FFFFFF;
+} 

@@ -1,3 +1,5 @@
+"use strict";
+
 // Variables globales
 var t;
 
@@ -11,6 +13,10 @@ $(document).ready(function() {
 
 function calcular(){
   var input_text_str = document.getElementById("input_text").value;
+  
+  if (window.localStorage)
+    localStorage.input_text = input_text_str;
+  
   var table = [];
   var wrong_rows = [];
   parseInput(input_text_str, table, wrong_rows);
@@ -19,6 +25,8 @@ function calcular(){
 };
 
 function parseInput(str, table, wrong_rows){
+  //                        A              |      B     |   C 
+  // A = Valores con comillas, B = valores sin comillas, C = espacios vacíos (valores en blanco)
   var regexp = /\s*"((?:[^"\\]|\\.)*)"\s*,?|\s*([^,]+),?|\s*,/g;
   // Separar todas las líneas de la entrada
   var lines = str.split(/\n+\s*/);
@@ -57,7 +65,7 @@ function parseInput(str, table, wrong_rows){
 }
 
 window.onload = function() {
-  if (window.localStorage && localStorage.original) {
-    document.getElementById("original").value = localStorage.original;
+  if (window.localStorage && localStorage.input_text) {
+    document.getElementById("input_text").value = localStorage.input_text;
   }
 };
