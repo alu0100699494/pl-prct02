@@ -44,7 +44,7 @@ table.output {
     border-style: dashed;
     border-color: #000000;
     border-collapse: separate;
-    background-color: #232323;
+    background-color: rgba(0, 0, 0, 0);
 }
 
 table.output td {
@@ -75,7 +75,7 @@ h1.header {
 textarea.input {
   width: 60em;
   height: 12em;
-  border: 3px solid #000000;
+  border: 1px solid #000000;
   background-color: #222222;
   font-weight: bold;
   color: #FFFFFF;
