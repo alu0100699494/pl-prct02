@@ -1,0 +1,36 @@
+table.output {
+    margin-left:auto; 
+    margin-right:auto;
+	
+	color:white;
+    
+    text-align: center;
+    border-width: 8px;
+    border-spacing: 8px;
+    border-style: dashed;
+    border-color: #000000;
+    border-collapse: separate;
+    background-color: #232323;
+}
+
+table.output td {
+    border-width: 1px;
+    padding: 10px;
+    border-style: none;
+    border-color: gray;
+    background-color: #808080;
+}
+
+table.output td.wrong {
+  background-color: #806666;
+}
+
+#target tr:hover td {
+  background-color: #667769;
+  color: #FFFFFF;
+} 
+
+#target tr:hover td.wrong {
+  background-color: #5c0202;
+  color: #FFFFFF;
+} 

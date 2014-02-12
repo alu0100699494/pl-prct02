@@ -6,11 +6,11 @@ var t;
 $(document).ready(function() {
   t = _.template(template_outTable.innerHTML);
   $("button").click(function() {
-     calcular();
+     calculate();
    });
 });
 
-function calcular(){
+function calculate(){
   var input_text_str = document.getElementById("input_text").value;
   
   if (window.localStorage)
