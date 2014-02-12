@@ -1,8 +1,18 @@
 body {
   margin: 5px 0px 0px 50px;
   font-family: Arial;
-  background-color:#b0c4de;
+
   font-size:large;
+  
+  background-image:url('assets/wallpaper.jpg');
+  background-color:#000000;
+  background-repeat:no-repeat;
+  background-position:center top;
+  background-size: 1400px 
+}
+
+p {
+  color: #FFFFFF;
 }
 
 table.input {
@@ -25,32 +35,34 @@ table.input td.left{
 table.output {
     margin-left:auto; 
     margin-right:auto;
+	
+	color:white;
     
     text-align: center;
-    border-width: 5px;
-    border-spacing: 5px;
+    border-width: 8px;
+    border-spacing: 8px;
     border-style: dashed;
-    border-color: #3C5681;
+    border-color: #000000;
     border-collapse: separate;
-    background-color: rgb(221, 237, 243);
+    background-color: #232323;
 }
 
 table.output td {
     border-width: 1px;
-    padding: 5px;
+    padding: 10px;
     border-style: none;
     border-color: gray;
-    background-color: rgb(185, 217, 229);
+    background-color: #808080;
 }
 
 table.output td.wrong {
-  background-color: rgb(224, 144, 144);
+  background-color: #806666;
 }
 
 h1.header {
     font-weight: normal;
     font-size: 42px;
-    background: #3C5681;
+    background: #232323;
     padding: 10px 15px;
     color: white;
     display:inline-block;
@@ -63,11 +75,14 @@ h1.header {
 textarea.input {
   width: 60em;
   height: 12em;
-  border: 3px solid #3C5681;
+  border: 3px solid #000000;
+  background-color: #222222;
+  font-weight: bold;
+  color: #FFFFFF;
 }
 
 #target tr:hover td {
-  background-color: #151d58;
+  background-color: #667769;
   color: #FFFFFF;
 } 
 
