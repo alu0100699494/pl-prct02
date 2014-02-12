@@ -9,6 +9,7 @@ Además, se realizará una segunda fase que consistirá en hacer uso de herramie
 Se puede acceder a la página web de *GitHub Pages* alojada en el siguiente enlace:
 
 - [http://alu0100699494.github.io/pl-prct02/](http://alu0100699494.github.io/pl-prct02/)
+- [http://alu0100699494.github.io/pl-prct02/tests](http://alu0100699494.github.io/pl-prct02/tests)
 
 ## 3. Planteamiento de resolución ##
 Para resolver la práctica, se ha propuesto la siguiente resolución:
