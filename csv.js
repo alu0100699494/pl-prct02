@@ -10,7 +10,6 @@ $(document).ready(function() {
    });
 });
 
-
 function calcular(){
   var input_text_str = document.getElementById("input_text").value;
   
